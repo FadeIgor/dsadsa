@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cennik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Firma remontowo-budowlana "BUD-MEX"</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">strona glowna</a></li>
+            <li><a href="kalkulator.html">Kalkulator usług</a></li>
+            <li class="wybrany"><a href="cennik.html">Cennik i Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section class="lewa">
+        <h3>Kontakt bezpośredni</h3>
+        <ul>
+            <li><span>Tel:</span>216-937-666</li>
+            <li><span>E-mail:</span>biuro@bud-mex.pl</li>
+            <li><span>Adres:</span>ul. Budowlana 15, Warszawa</li>
+        </ul>
+    </section>
+
+    <main>
+        <h2>Szczegółowy Cennik</h2>
+
+        <table>
+            <tr>
+                <th>Lp.</th>
+                <th>Pozycja</th>
+                <th>jednostka</th>
+                <th>cena netto</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Malowanie dwukrotne</td>
+                <td>m<sup>2</sup></td>
+                <td>20,00zł</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Układanie paneli podłogowych</td>
+                <td>m<sup>2</sup></td>
+                <td>45,00zł</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Układanie glazury/terakoty</td>
+                <td>m<sup>2</sup></td>
+                <td>80,00zł</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Gruntowanie ścian</td>
+                <td>m<sup>2</sup></td>
+                <td>5,00zł</td>
+            </tr>
+        </table>
+        <h2>Formularz kontaktowy</h2>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Napisz do nas</legend>
+                <label for="imie">Imie i Nazwisko:</label>
+                <input type="text" name="imie" id="imie">
+
+                <label for="email">Adres E-mail:</label>
+                <input type="email" name="email" id="email">
+
+                <label for="wiadomosc">Wiadomość:</label>
+                <textarea name="wiadomosc" id="wiadomosc" rows="5"></textarea>
+                <button type="submit">Wyślij wiadomosc</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <section class="prawa">
+        <h3>Dojazd</h3>
+        <p>Działamy w promieniu 50km od siedziby firmy bez dodatkowych opłat za dojazd</p>
+    </section>
+
+    <footer>
+        <p>autor strony: Igor Wickowski</p>
+    </footer>
+</body>
+</html>

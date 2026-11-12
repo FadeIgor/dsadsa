@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        'header  header header header'
+        'nav nav  nav nav'
+        'lewa main  main prawa'
+        'footer footer  footer footer';
+    background-color: #EEE;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav li{
+    padding: 20px;
+    margin: 5px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.wybrany {
+    background-color: green;
+    border-radius: 5px;
+}
+
+nav li:hover {
+    background-color: green;
+    border-radius: 5px;
+    
+}
+
+.lewa {
+    grid-area: lewa;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 58vw;
+}
+
+main h2, h3, p{
+    margin: 5px;
+    padding: 5px;
+}
+
+.zdj {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+}
+
+main table,td, th{
+    border: 1px black solid;
+    border-collapse: collapse;
+    padding: 5px;
+    align-self: center;
+}
+
+main th {
+     background-color: green;
+}
+
+main table{
+    width: 80%;
+}
+
+.zdj img {
+    width: 30%;
+    height: auto;
+    padding: 30px;
+    
+}
+
+form, fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+fieldset {
+    border: 1px solid green ;
+    border-radius: 10px;
+}
+
+fieldset legend {
+    color: green;
+}
+
+fieldset button{
+    width: 120px;
+    border: 0;
+    background-color: green;
+    border-radius: 5px;
+}
+
+fieldset label{
+    font-weight: bold;
+}
+
+fieldset label, div, button, textarea, input, select {
+    margin: 5px;
+    padding: 5px;
+}
+
+.info {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 255, 0, 0.2);
+    margin: 10px;
+    border-radius: 4px;
+} 
+
+.prawa {
+    grid-area: prawa;
+}
+
+.prawa span {
+    font-weight: bold;
+}
+
+.prawa, .lewa ul, ol {
+  list-style-position: inside;
+
+}
+
+
+.prawa, .lewa {
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 18vw;
+    background-color: #CCC;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Firma remontowo-budowlana "BUD-MEX"</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">strona glowna</a></li>
+            <li class="wybrany"><a href="kalkulator.html">Kalkulator usług</a></li>
+            <li ><a href="cennik.html">Cennik i Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section class="lewa">
+        <h3>Informacje</h3>
+        <p>Wykonaj formularz obok, aby otrzymac wstepna wycene prac remontowych w Twoim mieszkaniu</p>
+    </section>
+
+    <main>
+        <h2>Kalkulator wyceny remontu</h2>
+
+        <form action="" method="POST">
+            <fieldset>
+                <legend>Parametry pomieszczenia</legend>
+
+            
+                <label for="powierzchnia">Powierzchnia (m<sup>2</sup>):</label>
+                <input type="number" name="powierzchnia" id="powierzchnia" required>
+            
+                <label for="usluga">Rodzaj usługi:</label>
+                <select name="usluga" id="usluga">
+                    <option value="20">Malowanie (20zł/m^2)</option>
+                    <option value="45">Ukladanie paneli (45 zł/m^2)</option>
+                    <option value="80">Ukladanie plytek (80 zł/m^2)</option>
+                </select>
+                
+                <div>
+                    <input type="checkbox" name="gruntowanie" id="gruntowanie">
+                    <label for="">Gruntowanie powierzchni (+5 zł/m<sup>2</sup>)</label> 
+                </div>
+
+                <label for="materialy">materialy:</label>
+                <div>
+                    <input type="radio" value="klient" name="materialy" id="materialy">
+                    <label for="">Po stronie klienta</label>
+                </div>
+                <div>
+                    <input type="radio" value="firma" name="materialy" id="materialy">
+                    <label for="">dostarcza Firma(15zł/m<sup>2</sup>)</label>
+                </div>
+                <button type="submit">Oblicz koszt</button>
+            </fieldset>
+        </form>
+        <div class="info">
+            <p>uzupelnij formularz i kliknij "oblicz koszt".</p>
+        </div>
+        <p class="obliczenia"></p>
+    </main>
+
+    <section class="prawa">
+        <h3>Promocja!</h3>
+        <p>Zamówienia powyżej 2000 zł objęte są darmowym dojazdem do klienta!</p>
+    </section>
+
+    <footer>
+        <p>autor strony: Igor Wickowski</p>
+    </footer>
+</body>
+</html>
